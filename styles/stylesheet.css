@@ -1,0 +1,218 @@
+
+/*----- FONTS -----*/
+body {
+  background-color: #E5D8C9;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/*----- NAV BAR -----*/
+.topnav {
+  overflow: hidden;
+  background-color:#233721;
+  position: relative;
+  color: #ECBDAF;
+  text-indent: 2rem;
+}
+
+.topnav #Links {
+  display: none;
+}
+
+.topnav a {
+  color: #ECBDAF;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.active {
+  background-color: #d746b3;
+  color: rgb(198, 52, 52);
+}
+
+/*----- HERO IMAGE -----*/
+.hero-container {
+  height: 100vh;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hero-container img {
+  width: 100%;
+  object-fit: cover;
+}
+
+#hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-text {
+  font-family: "Rampart One", Arial, Helvetica, sans-serif; /* GOOGLE FONT + back up fonts */
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 20%;
+}
+
+/*----- CONTENT -----*/
+.content-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* CREATING TWO COLUMNS */
+  text-align: center;
+  background-color:#233721;
+  color: #233721;
+  margin-bottom: 1rem;
+}
+
+.content-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* CENTER HORIZONTALLY */
+  text-align: center;
+  padding: 0 7vw;
+}
+
+.content-img {
+  max-width: 100%; /* IMAGE FILLS WIDTH OF COLUMN */
+  max-height: 100%; /* IMAGE FILLS HEIGHT OF COLUMN */
+}
+
+/*----- ACCORDION -----*/
+.accordion-container {
+  background-color: #E5D8C9;
+  color: #233721;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.accordion {
+  background-color: #ECBDAF;
+  color: #233721;
+  cursor:pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  position: relative;
+  padding-right: 24px;
+}
+
+.active, .accordion:hover { 
+  background-color: #233721; /* CHANGE HOVER COLOUR */
+  color: #ECBDAF; /* HOVER TEXT */
+}
+
+.accordion:focus {
+  outline: 2px solid blue;
+}
+
+.accordion svg {
+  position: absolute;
+  padding-right: 3vh;
+  right: 0; /* MOVE ICON TO RIGHT OF BUTTON */
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: #E5D8C9;
+  display: none;
+  overflow: hidden;
+}
+
+.accimg {
+  max-height: 80vh;
+  object-fit: cover;
+}
+
+/*----- MEDIA QUERIES -----*/
+/*----- MOBILE -----*/
+@media screen and (max-width: 768px) {
+
+  .content-container {
+    grid-template-columns: 1fr; /* CHANGE TO ONE COLUMN */
+  }
+
+  .content-img {
+    padding-top: 5vh;
+    max-width: 100%; /* IMAGE FILLS WIDTH OF COLUMN */
+    max-height: 100%; /* IMAGE FILLS HEIGHT OF COLUMN */
+  }
+
+/*----- Tablet -----*/
+@media screen and (min-width: 768px) {
+}
+
+/*----- Desktop -----*/
+@media screen and (min-width: 1200px) {
+}
+
+/*----- FOOTER -----*/
+.footer-container {
+  display: grid;
+  grid-column: span 3;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: left;
+  padding: 1vh;
+  background-color: #E5D8C9;
+  color: #233721;
+  justify-content: space-around;
+}
+
+.nav {
+  text-align: left;
+  padding-left: 4vh;
+  line-height: 1.5;
+}
+
+#footer {
+  text-align: center;
+  grid-column: 1 / -1; /* Span all columns */
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+
+}
+
+.nav .list li a:hover {
+  color:white; /* Change color on hover */
+  background-color: #8a442b; /* Change background color on hover */
+}
+}

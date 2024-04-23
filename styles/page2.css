@@ -1,0 +1,14 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    background-color: black;
+    color: white;
+}
+
+h1,h2 {
+    text-align: center;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+}

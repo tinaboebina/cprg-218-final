@@ -2,7 +2,7 @@
 /*----- FONTS -----*/
 body {
   background-color: black;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.1;
 }
 
@@ -32,22 +32,28 @@ p {
   position: relative;
   color: black;
   text-indent: 2rem;
-  margin: 1vh;
+  margin: 1rem;
 }
 
 .topnav a {
   color: black;
   padding: 1rem 1rem;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 18px;
   display: block;
 }
 
 .topnav a.icon {
-  display: block;
+  display: flex;
   position: absolute;
   right: 0;
   top: 0;
+  bottom: 0;
+}
+
+.topnav a:hover {
+  background-color: black;
+  color: white;
 }
 
 /*----- HERO IMAGE -----*/
@@ -91,20 +97,19 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; /* CENTER HORIZONTALLY */
   text-align: center;
   padding: 0 7vw;
 }
 
 .content-img {
-  max-width: 100%; /* IMAGE FILLS WIDTH OF COLUMN */
-  max-height: 100%; /* IMAGE FILLS HEIGHT OF COLUMN */
+  max-width: 100%;
+  max-height: 100%;
 }
 
 /*----- ACCORDION -----*/
 .accordion-container {
   height: auto;
-  margin-bottom: 1rem;
+  margin: 1rem;
 }
 
 .accordion {
@@ -115,13 +120,11 @@ p {
   width: 100%;
   text-align: left;
   border: none;
-  outline: none;
   transition: 0.4s;
   position: relative;
-  padding-right: 24px;
 }
 
-.active, .accordion:hover { 
+.active,.accordion:hover { 
   background-color: white; /* CHANGE HOVER COLOUR */
   color:black; /* HOVER TEXT */
 }
@@ -137,11 +140,9 @@ p {
 }
 
 .panel {
-  padding: 0 18px;
   background-color:black;
   color: white;
   display: none;
-  overflow: hidden;
 }
 
 .accimg {
@@ -165,7 +166,6 @@ p {
 }
 
 /*----- FOOTER -----*/
-
 footer {
   background-color: white;
   display: grid;

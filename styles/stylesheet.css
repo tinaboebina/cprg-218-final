@@ -1,7 +1,7 @@
 
 /*----- FONTS -----*/
 body {
-  background-color: #E5D8C9;
+  background-color: black;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   line-height: 1.1;
 }
@@ -28,19 +28,16 @@ p {
 /*----- NAV BAR -----*/
 .topnav {
   overflow: hidden;
-  background-color:#233721;
+  background-color:white;
   position: relative;
-  color: #ECBDAF;
+  color: black;
   text-indent: 2rem;
-}
-
-.topnav #Links {
-  display: none;
+  margin: 1vh;
 }
 
 .topnav a {
-  color: #ECBDAF;
-  padding: 14px 16px;
+  color: black;
+  padding: 1rem 1rem;
   text-decoration: none;
   font-size: 17px;
   display: block;
@@ -53,16 +50,10 @@ p {
   top: 0;
 }
 
-.active {
-  background-color: #d746b3;
-  color: rgb(198, 52, 52);
-}
-
 /*----- HERO IMAGE -----*/
 .hero-container {
   height: 100vh;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem;
 }
 
 .hero-container img {
@@ -91,9 +82,9 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr; /* CREATING TWO COLUMNS */
   text-align: center;
-  background-color:#233721;
-  color: #233721;
-  margin-bottom: 1rem;
+  background-color:white;
+  color: black;
+  margin: 1rem;
 }
 
 .content-text {
@@ -112,15 +103,13 @@ p {
 
 /*----- ACCORDION -----*/
 .accordion-container {
-  background-color: #E5D8C9;
-  color: #233721;
   height: auto;
   margin-bottom: 1rem;
 }
 
 .accordion {
-  background-color: #ECBDAF;
-  color: #233721;
+  background-color: black;
+  color: white;
   cursor:pointer;
   padding: 18px;
   width: 100%;
@@ -133,8 +122,8 @@ p {
 }
 
 .active, .accordion:hover { 
-  background-color: #233721; /* CHANGE HOVER COLOUR */
-  color: #ECBDAF; /* HOVER TEXT */
+  background-color: white; /* CHANGE HOVER COLOUR */
+  color:black; /* HOVER TEXT */
 }
 
 .accordion:focus {
@@ -149,7 +138,8 @@ p {
 
 .panel {
   padding: 0 18px;
-  background-color: #E5D8C9;
+  background-color:black;
+  color: white;
   display: none;
   overflow: hidden;
 }
@@ -172,28 +162,16 @@ p {
     max-width: 100%; /* IMAGE FILLS WIDTH OF COLUMN */
     max-height: 100%; /* IMAGE FILLS HEIGHT OF COLUMN */
   }
-
-/*----- Tablet -----*/
-@media screen and (min-width: 768px) {
-}
-
-/*----- Desktop -----*/
-@media screen and (min-width: 1200px) {
 }
 
 /*----- FOOTER -----*/
-.footer-container {
-  display: grid;
-  grid-column: span 3;
-}
 
 footer {
+  background-color: white;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   text-align: left;
   padding: 1vh;
-  background-color: #E5D8C9;
-  color: #233721;
   justify-content: space-around;
 }
 
@@ -203,16 +181,9 @@ footer {
   line-height: 1.5;
 }
 
-#footer {
+#copyright {
   text-align: center;
   grid-column: 1 / -1; /* Span all columns */
   padding-top: 1vh;
   padding-bottom: 1vh;
-
-}
-
-.nav .list li a:hover {
-  color:white; /* Change color on hover */
-  background-color: #8a442b; /* Change background color on hover */
-}
 }
